@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Makaha Experience | Surf in Lima</title>
+    <link rel="icon shortcut" href="img/icon.png" type="image/png">
+  </head>
+  <body>
+
+  <section id="fix-menu">
+    <div class="fix-menu">
+      <a href="#"><h2>THE MAKAHA EXPERIENCE</h2></a>
+      <a id="toggle-menu"><img src="img/menu-fix.png" alt=""></a>
+    </div>
+    <div class="fix-nav">
+      <ul>
+        <li  id="ipod4"><a href="index.html">HOME</a></li>
+        <li id="ipod4"><a class="active"href="hostels.html">HOSTELS</a></li>
+        <li id="ipod4"><a href="tour.html">TOUR GUIDE</a></li>
+        <li id="ipod4"><a href="overview.html">OVERVIEW</a></li>
+        <li id="ipod4"><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="fix-social">
+      <a href="https://www.facebook.com/alberto.abanto.39"><img src="img/face-fix.png" alt=""></a>
+      <a href="https://www.instagram.com/rasmotosurf/"><img src="img/insta-fix.png" alt=""></a>
+      <a href="https://web.whatsapp.com/"><img src="img/app-fix.png" alt=""></a>
+    </div>
+  </section>
+
+  <section id="top">
+
+      <div class="shadow">
+      </div>
+      <div class="box">
+        <div class="top-cont">
+          <img src="" alt="">
+          <h2>the <br> makaha <br> experience</h2>
+          <h1>surf in lima & tour guide</h1>
+        </div>
+      </div>
+    </section>
+
+  <section id="hostels">
+    <div class="hostels">
+      <div class="hostels-text">
+        <h4 class="hostels-title">hostels - airport</h4>
+        <h3 class="hostels-subtitle">transfer</h3>
+        <p>The city of lima is always in constant change to improve the quality of attention to tourists and adventurers from all over the world, the makaha experience is always to its visitors with the mission of living an experience in lima, the city of Surf. The makaha experience represented by its founder the surf instructor alberto zelada. Offers a private shuttle service to the following hotels.. Also a tour guide around Lima, and surroundings..</p>
+        <p>If you are staying or plan to stay in another hostel, it is fine!! We offer transportation service to any hotel in Lima, if you are ready for this adventure.. let's surf !! </p>
+        <p>Transfer to any hotel</p>
+        <div class="hostels-btn">
+          <a target="_blank"href="https://www.trivago.pe/"><button class="btn btn-color"type="button" name="button">CHOOSE HOTEL</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="logos">
+          <div class="logos-img">
+            <img src="img/hostels-1.png" width="200" alt="">
+            <img src="img/hostels-8.jpg" width="200" alt="">
+            <img src="img/hostels-3.png" width="200"  alt="">
+            <img src="img/hostels-4.png" width="200"  alt="">
+            <img src="img/hostels-5.png" width="200"  alt="">
+            <img src="img/hostels-6.jpg" width="200" alt="">
+            <img src="img/hostels-9.png" width="200" alt="">
+          </div>
+        </div>
+    </section>
+
+  <section id="contact">
+    <div class="contact-cont">
+      <div class="form" id="form">
+        <form class="form-box" action="index.html" method="post">
+          <div class="forms-box-head">
+            <h3 class="form-title">contact me</h3>
+            <a id="toggleContact"><img src="img/down.png" alt=""></a>
+          </div>
+          <div class="forms-box-in">
+            <input class="input-name"type="text" name="" value="" placeholder="Your name">
+            <input class="input-email"type="email" name="" value="" placeholder="Your email">
+            <textarea class="input-text"name="name" rows="4" cols="40" placeholder="How you want to live this adventure?"></textarea>
+            <button class="btn btn-color form-boton"type="button" name="button">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="autor">
+      <p>© MonkeyBox by Paul Santaria - 2017 All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Open Sans', 'Oswald']
+        }
+      });
+    </script>
+  <script type="text/javascript">
+    var $about = document.getElementById('about')
+    var $fixMenu = document.getElementById('fix-menu')
+    var $toggleMenu =document.getElementById('toggle-menu')
+    var $toggleContact =document.getElementById('toggleContact')
+
+    var $form =document.getElementById('form')
+    function formBox (){
+      $form.classList.toggle('open')
+    };
+    function menu(){
+      $fixMenu.classList.toggle('active')
+    }
+
+    $toggleMenu.addEventListener('touchstart', menu);
+    $toggleContact.addEventListener('touchstart', formBox);
+
+
+  </script>
+  <link rel="stylesheet" href="css/estilosx.min.css">
+  </body>
+</html>

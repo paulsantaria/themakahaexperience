@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Makaha Experience | Surf in Lima</title>
+    <link rel="icon shortcut" href="img/icon.png" type="image/png">
+  </head>
+  <body>
+
+  <section id="fix-menu">
+    <div class="fix-menu">
+      <a href="#"><h2>THE MAKAHA EXPERIENCE</h2></a>
+      <a id="toggle-menu"><img src="img/menu-fix.png" alt=""></a>
+    </div>
+    <div class="fix-nav">
+      <ul>
+        <li id="ipod4"><a href="index.html">HOME</a></li>
+        <li id="ipod4"><a href="hostels.html">HOSTELS</a></li>
+        <li id="ipod4"><a href="tour.html">TOUR GUIDE</a></li>
+        <li id="ipod4"><a class="active"href="overview.html">OVERVIEW</a></li>
+        <li id="ipod4"><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="fix-social">
+      <a href="https://www.facebook.com/alberto.abanto.39"><img src="img/face-fix.png" alt=""></a>
+      <a href="https://www.instagram.com/rasmotosurf/"><img src="img/insta-fix.png" alt=""></a>
+      <a href="https://web.whatsapp.com/"><img src="img/app-fix.png" alt=""></a>
+    </div>
+  </section>
+
+  <section id="top">
+
+      <div class="shadow">
+      </div>
+      <div class="box">
+        <div class="top-cont">
+          <img src="" alt="">
+          <h2>the <br> makaha <br> experience</h2>
+          <h1>surf in lima & tour guide</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="overview">
+        <div class="overview-text">
+          <h2>Surf Overview</h2>
+          <h3>Pictures</h3>
+          <p>Tourists from all over the world and lived this mystical experience on the beaches of Lima especially makaha, which is a beach known by surfers from all over the world for its waves, come and have fun with us adventurete in this beautiful place that is the city of Lima knows More than our beaches, enter our culture, gastronomy and meet our people and fall in love with our city.</p>
+          <div class="surf-slide">
+            <div class="w3-content w3-display-container">
+              <img class="mySlides" src="img/over1.jpg">
+              <img class="mySlides" src="img/over2.jpg">
+              <img class="mySlides" src="img/over3.jpg">
+              <img class="mySlides" src="img/over4.jpg">
+              <img class="mySlides" src="img/over6.jpg">
+              <img class="mySlides" src="img/over8.jpg">
+              <div class="w3-center w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-btn">
+              <a target="_blank"href="https://www.facebook.com/alberto.abanto.39/photos_all"><button class="btn btn-color"type="button" name="button">WATCH MORE</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="driver">
+      <div class="overview">
+        <div class="overview-text">
+          <h2>Driver Overview</h2>
+          <h3>Pictures</h3>
+          <p>Tourists from all over the world stay at Lima, makaha experience provides private transportation and tourist guide, private transportation and tourist guide is offered to all lime, airport, hotel, restaurants and more. Service 24 HOURS !!</p>
+          <div class="driver-slide">
+
+          </div>
+          <div class="overview-btn">
+            <a target="_blank"href="https://www.facebook.com/alberto.abanto.39/photos_all"><button class="btn btn-color"type="button" name="button">WATCH MORE</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="contact">
+    <div class="contact-cont">
+      <div class="form" id="form">
+        <form class="form-box" action="index.html" method="post">
+          <div class="forms-box-head">
+            <h3 class="form-title">contact me</h3>
+            <a id="toggleContact"><img src="img/down.png" alt=""></a>
+          </div>
+          <div class="forms-box-in">
+            <input class="input-name"type="text" name="" value="" placeholder="Your name">
+            <input class="input-email"type="email" name="" value="" placeholder="Your email">
+            <textarea class="input-text"name="name" rows="4" cols="40" placeholder="How you want to live this adventure?"></textarea>
+            <button class="btn btn-color form-boton"type="button" name="button">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="autor">
+      <p>© MonkeyBox by Paul Santaria - 2017 All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Open Sans', 'Oswald']
+        }
+      });
+    </script>
+  <script type="text/javascript">
+    var $about = document.getElementById('about')
+    var $fixMenu = document.getElementById('fix-menu')
+    var $toggleMenu =document.getElementById('toggle-menu')
+    var $toggleContact =document.getElementById('toggleContact')
+
+    var $form =document.getElementById('form')
+    function formBox (){
+      $form.classList.toggle('open')
+    };
+    function menu(){
+      $fixMenu.classList.toggle('active')
+    }
+
+    $toggleMenu.addEventListener('touchstart', menu);
+    $toggleContact.addEventListener('touchstart', formBox);
+
+  </script>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-white";
+    }
+    </script>
+    <link rel="stylesheet" href="css/estilosx.min.css">
+  </body>
+</html>
