@@ -81,7 +81,7 @@
       <section class="social"id="social">
         <div class="up">
           <div class="up-box">
-            <a class=""href="#top"><img class="up-img"src="img/up.png" alt=""></a>
+            <a class=""href="#top"><img class="up-img"data-src="img/up.png" alt=""></a>
           </div>
         </div>
         <div class="face">
@@ -99,7 +99,7 @@
             <p>
             This is a lifetime opportunity, to experience surfing feel the challenge of mind and body in the process. We want you to feel the force of nature and the magic of Makaha beach that is characterized by its waves that will make you feel more connected with nature. Our activities build the strength, balance and flexibility that anybody surfing will tell you that they are key elements in surfing. I'm here to make sure you get everything and more during your time in the Makaha experience.</p>
             <div class="founder">
-              <img src="img/founder.jpg" alt="" width="40"height="40">
+              <img data-src="img/founder.jpg" alt="" width="40"height="40">
             </div>
             <p>Alberto Zelada, Surf Instructor</p>
           </div>
@@ -181,13 +181,13 @@
   <section id="hostels">
         <div class="logos">
           <div class="logos-img">
-            <img src="img/hostels-1.png" width="200" alt="">
-            <img src="img/hostels-8.jpg" width="200" alt="">
-            <img src="img/hostels-3.png" width="200"  alt="">
-            <img src="img/hostels-4.png" width="200"  alt="">
-            <img src="img/hostels-5.png" width="200"  alt="">
-            <img src="img/hostels-6.jpg" width="200" alt="">
-            <img src="img/hostels-9.png" width="200" alt="">
+            <img data-src="img/hostels-1.png" width="200" alt="">
+            <img data-src="img/hostels-8.jpg" width="200" alt="">
+            <img data-src="img/hostels-3.png" width="200"  alt="">
+            <img data-src="img/hostels-4.png" width="200"  alt="">
+            <img data-src="img/hostels-5.png" width="200"  alt="">
+            <img data-src="img/hostels-6.jpg" width="200" alt="">
+            <img data-src="img/hostels-9.png" width="200" alt="">
           </div>
         </div>
         <div class="hostels">
@@ -211,7 +211,7 @@
         </div>
       </div>
       <div class="car">
-        <img src="img/van.png" alt="">
+        <img data-src="img/van.png" alt="">
       </div>
     </section>
 
@@ -399,13 +399,15 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
+  <script>
       WebFont.load({
         google: {
           families: ['Open Sans', 'Oswald']
         }
       });
-    </script>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
   <script type="text/javascript">
     var $about = document.getElementById('about')
     var $fixMenu = document.getElementById('fix-menu')
@@ -423,6 +425,9 @@
     $toggleMenu.addEventListener('touchstart', menu);
     $toggleContact.addEventListener('touchstart', formBox);
 
+    var bLazy = new Blazy({
+        selector: 'img'
+    });
 
   </script>
   <link rel="stylesheet" href="css/estilos.min.css">
